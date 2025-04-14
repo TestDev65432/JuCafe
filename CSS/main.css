@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Nosifer&display=swap);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+
+  /* HEADER */
+
+  header {
+    background-color: #832d1c;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__logo {    
+    font-size: 24px;
+    color: #FFF0D1;
+    
+  }
+    
+    .header__title{
+        font-family: "Just Me Again Down Here", cursive;
+
+    }
+
+    .header__title--bege{
+        font-family: "Just Me Again Down Here", cursive;
+        color:#db9b51
+
+    }
+  
+  nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  .banner {
+    background-image: url(../image/banner_Dsk.png); /* imagem da xícara de café (banner) */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: right;
+    color: white;
+  }
+  .banner__ctah1 {
+    font-size: 32px;
+  }
+  .banner__ctabutton {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background: #ccc;
+    cursor: pointer;
+  }
+  .banner__ctadestaque {
+    background: orange;
+    color: white;
+  }
+  .beneficios {
+    background: #f7e5c3;
+    padding: 40px 20px;
+  }
+  .beneficios h2 {
+    color: #832d1c;
+    margin-bottom: 20px;
+  }
+  .cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+  }
+  .depoimentos {
+    background: #000;
+    color: white;
+    padding: 40px 20px;
+  }
+  .depoimento-box {
+    max-width: 600px;
+    margin: auto;
+  }
+  .modelos {
+    padding: 40px 20px;
+  }
+  .modelos-box {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  .modelo {
+    background: #f0f0f0;
+    padding: 20px;
+    width: 45%;
+  }
+
+  /* FOOTER */
+  footer {
+    background-color: #832d1c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
