@@ -1,117 +1,160 @@
-@import url(https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Nosifer&display=swap);
-
+@import url('https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: Arial, sans-serif;
-    color: #333;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* HEADER */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
 
-  header {
-    background-color: #832d1c;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+/* HEADER */
 
-  .header__logo {    
-    font-size: 24px;
-    color: #FFF0D1;
-    
-  }
-    
-    .header__title{
-        font-family: "Just Me Again Down Here", cursive;
+header {
+  background-color: #982417;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    }
+.header__logo {
+  font-size: 24px;
+  color: #FFF0D1;
+  width: 80px;
+  height: 80px;
 
-    .header__title--bege{
-        font-family: "Just Me Again Down Here", cursive;
-        color:#db9b51
+}
 
-    }
-  
-  nav a {
-    color: #fff;
-    margin-left: 20px;
-    text-decoration: none;
-  }
-  .banner {
-    background-image: url(../image/banner_Dsk.png); /* imagem da xícara de café (banner) */
-    background-size: cover;
-    background-position: center;
-    padding: 100px 20px;
-    text-align: right;
-    color: white;
-  }
-  .banner__ctah1 {
-    font-size: 32px;
-  }
-  .banner__ctabutton {
-    margin-top: 10px;
-    padding: 10px 15px;
-    border: none;
-    background: #ccc;
-    cursor: pointer;
-  }
-  .banner__ctadestaque {
-    background: orange;
-    color: white;
-  }
-  .beneficios {
-    background: #f7e5c3;
-    padding: 40px 20px;
-  }
-  .beneficios h2 {
-    color: #832d1c;
-    margin-bottom: 20px;
-  }
-  .cards {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-  }
-  .card {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 30%;
-    text-align: center;
-  }
-  .depoimentos {
-    background: #000;
-    color: white;
-    padding: 40px 20px;
-  }
-  .depoimento-box {
-    max-width: 600px;
-    margin: auto;
-  }
-  .modelos {
-    padding: 40px 20px;
-  }
-  .modelos-box {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-  }
-  .modelo {
-    background: #f0f0f0;
-    padding: 20px;
-    width: 45%;
-  }
+.header__title {
+  font-family: "Just Me Again Down Here", cursive;
+  letter-spacing: 0%;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 100%;
 
-  /* FOOTER */
-  footer {
-    background-color: #832d1c;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
+}
+
+.header__title--bege {
+  font-family: "Just Me Again Down Here", cursive;
+  color: #db9b51
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.secoes {
+  font-family: "Just Me Again Down Here", cursive;
+  color: #FFF0D1;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.banner {
+  background-image: url(../image/banner_Dsk.png);
+  /* imagem da xícara de café (banner) */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: right;
+  color: white;
+}
+
+.banner__ctah1 {
+  font-size: 32px;
+}
+
+.banner__ctabutton {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.banner__ctadestaque {
+  background: orange;
+  color: white;
+}
+
+.banner__form {
+  background-color: #FFFFFF;
+  width: 589;
+  height: 237;
+  gap: 26px;
+  padding-top: 32px;
+  padding-right: 48px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+
+}
+
+.beneficios {
+  background: #f7e5c3;
+  padding: 40px 20px;
+}
+
+.beneficios h2 {
+  color: #832d1c;
+  margin-bottom: 20px;
+  font-family: "Lekton", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 30%;
+  text-align: center;
+}
+
+.depoimentos {
+  background: #000;
+  color: white;
+  padding: 40px 20px;
+}
+
+.depoimento-box {
+  max-width: 600px;
+  margin: auto;
+}
+
+.modelos {
+  padding: 40px 20px;
+}
+
+.modelos-box {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.modelo {
+  background: #f0f0f0;
+  padding: 20px;
+  width: 45%;
+}
+
+/* FOOTER */
+footer {
+  background-color: #832d1c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
