@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JuCafé</title>
-    <!-- CSS externo -->
+    <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="./CSS/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -15,131 +15,120 @@
 
 <body>
 
-    <!-- Cabeçalho do site -->
+    <!-- Header -->
     <header class="header">
-        <!-- Logo -->
         <div class="header__logo">
             <i class="fa-solid fa-mug-saucer"></i>
-            <h1 class="header__title">Ju<span class="header__title--bege">Café</span></h1>
+            <h1 class="header__title header__icon">Ju<span class="header__title--bege header__icon">Café</span></h1>
 
         </div>
-
-        <!-- Navegação (seções do site) -->
-        <nav class="secoes">
-            <a href="#beneficios">Benefícios</a>
-            <a href="#depoimentos">Depoimentos</a>
-            <a href="#franquias">Franquias</a>
+        <nav>
+            <a href="#beneficios" class="nav_link nav__link__border">Benefícios</a>
+            <a href="#depoimentos" class="nav_link">Depoimentos</a>
+            <a href="#franquias" class="nav_link">Franquias</a>
         </nav>
     </header>
 
-    <!-- Seção inicial + banner -->
-    <section class="banner">
-        <div class="banner__cta banner__form">
-            <box>
-                <h1>Seja nosso franqueado!</h1>
-                <p>Uma das redes que mais cresce no Brasil</p>
-                <button>Saiba mais</button>
-                <button class="banner__ctadestaque">Registrar interesse</button>
-            </box>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero__overlay">
+            <h2 class="hero__title">Seja nosso franqueado!</h2>
+            <p class="hero__subtitle">Uma das redes que mais cresce no Brasil</p>
+            <div class="hero__buttons">
+                <button class="button button__outline">Saber mais</button>
+                <button class="button button__filled">Registrar interesse</button>
+            </div>
         </div>
 
     </section>
 
     <!-- Seção de benefícios -->
     <section id="beneficios" class="beneficios">
-        <h2>Benefícios e Vantagens</h2>
-
-        <!-- Cards com os três principais benefícios -->
-        <div class="cards">
-            <div class="card">
-                <img src="./image/Increase.png" alt="mercado em crescimento">
+        <h2 class="beneficios__title">Benefícios e Vantagens</h2>
+        <div class="beneficios__cards">
+            <div class="beneficio__card">
+                <img src="./image/Increase.png" alt="mercado em crescimento" class="beneficio__card__icon">
                 <h3>Um mercado em expansão!</h3>
-                <p>Projeção de 15% de crescimento do franchising em 2024.</p>
+                <p class="beneficio__card__text">Projeção de 15% de crescimento do franchising em 2024.</p>
             </div>
 
-            <div class="card">
-                <i class="fa-solid fa-sack-dollar"></i>
-                <h3>Ótimos rendimentos</h3>
-                <p>Mercado de franquia alimentícia fatura em média 52bi.</p>
+            <div class="beneficio__card">
+                <i class="fa-solid fa-sack-dollar" class="beneficio__card__icon"></i>
+                <h3 class="beneficio__card__title">Ótimos rendimentos</h3>
+                <p class="beneficio__card__text">Mercado de franquia alimentícia fatura em média 52bi.</p>
             </div>
 
-            <div class="card">
-                <i class="fa-solid fa-people-pulling"></i>
-                <h3>Suporte e Treinamentos</h3>
-                <p>Todo apoio que o novo franqueado necessita!</p>
+            <div class="beneficio__card">
+                <i class="fa-solid fa-people-pulling" class="beneficio__card__icon"></i>
+                <h3 class="beneficio__card__title">Suporte e Treinamentos</h3>
+                <p class="beneficio__card__text">Todo apoio que o novo franqueado necessita!</p>
             </div>
         </div>
     </section>
 
-    <!-- Seção de depoimentos -->
+    <!-- Depoimentos -->
     <section id="depoimentos" class="depoimentos">
-        <h2>Depoimentos</h2>
+        <h2 class="depoimentos__title">Depoimentos</h2>
+        <div class="depoimento__box">
 
-        <div class="depoimento-box">
-            <!-- Texto do depoimento -->
-            <blockquote>
+            <blockquote class="depoimentos__texto">
                 "Sempre gostei de café mas nunca pensei em transformar isto em um negócio, mas quando conheci a JuCafé e
                 seu modelo de negócio passei a vislumbrar um futuro promissor atuando com um produto que aprecio. Estou
                 muito realizada e agradeço a todo apoio da franquia nesta relação construída com diálogo e confiança."
             </blockquote>
 
-            <!-- Nome e local da franqueada -->
-            <p class="autor">Kamila Kaffman<br><span>Franqueada - São Paulo SP</span></p>
+            <p class="depoimentos__autor">Kamila Kaffman<br><span>Franqueada - São Paulo SP</span></p>
 
-            <!-- imagem da franqueada -->
-            <div class="imagem-franqueada">
-                <img src="./image/franqueado.png" alt="imagem da franqueada">
+            <div class="depoimentos__imagem">
+                <img src="./image/franqueado.png" alt="Kamila Kaffman">
             </div>
         </div>
     </section>
 
     <!-- Seção de modelos de negócio -->
     <section id="franquias" class="modelos">
-        <h2>Modelo de Negócio</h2>
+        <h2 class="modelos__title">Modelo de Negócio</h2>
 
-        <div class="modelos-box">
-            <!-- Modelo Bistrô -->
+        <div class="modelos__container">
             <div class="modelo">
-                <!-- Ambiente Bistrô modelo Dsk -->
-                <div class="imagem-modelo">
+                <div class="modelo__img">
                     <img src="./image/modeloBistro_Dsk.png" alt="Modelo Bistrô">
                 </div>
-                <h3>Modelo Bistrô</h3>
-                <ul>
-                    <li>A partir de 25 m²</li>
-                    <li>Investimento inicial a partir de 250 mil</li>
-                    <li>Faturamento anual R$ 2 milhões</li>
+                <h3 class="modelo__title">Modelo Bistrô</h3>
+                <ul class="modelo__lista">
+                    <li class="modelo__item">A partir de 25 m²</li>
+                    <li class="modelo__item">Investimento inicial a partir de 250 mil</li>
+                    <li class="modelo__item">Faturamento anual R$ 2 milhões</li>
                 </ul>
             </div>
 
-            <!-- Modelo Quiosque -->
+
             <div class="modelo">
-                <!-- Modelo Quiosque Dsk -->
-                <div class="imagem-modelo">
+                <div class="modelo__img">
                     <img src="./image/modeloQuiosque_Dsk.png" alt="Modelo Quiosque">
                 </div>
-                <h3>Modelo Quiosque</h3>
+                <h3 class="modelo__title">Modelo Quiosque</h3>
                 <ul>
-                    <li>A partir de 10 m²</li>
-                    <li>Investimento inicial a partir de 150 mil</li>
-                    <li>Faturamento anual R$ 750 mil</li>
+                    <li class="modelo__item">A partir de 10 m²</li>
+                    <li class="modelo__item">Investimento inicial a partir de 150 mil</li>
+                    <li class="modelo__item">Faturamento anual R$ 750 mil</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Rodapé do site -->
-    <footer>
-        <section class="footer__columns footer__social">
-            <p class="footer__social--text">Siga-nos nas redes sociais</p>
-            <div class="footer__social-icons">
+    <!-- Footer -->
+    <footer class="footer">
+        <section class="footer__social">
+            <span class="footer__text">Siga-nos nas redes sociais</span>
+            <div class="footer__icon">
                 <a href="#"><i class=" footer__social--icons fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="footer__social--icons fa-brands fa-whatsapp"></i></a>
                 <a href="#"><i class="footer__social--icons fa-brands fa-instagram"></i></a>
             </div>
         </section>
 
-        <div class="contato">
+        <div class="footer__contact">
             <p>Contato: 0800 222 0092</p>
             <p>Desenvolvido por YSTQ Soluções Digitais</p>
         </div>
