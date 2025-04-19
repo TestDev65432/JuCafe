@@ -85,7 +85,7 @@ header {
 .hero__overlay {
   right: 10%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-10%);
   background-color: #fff;
   padding: 30px;
   border-radius: 8px;
@@ -93,6 +93,7 @@ header {
   max-width: 300px;
   box-shadow: 0px 4px 4px 0px #00000040;
   opacity: 90%;
+  margin-left: auto;
 }
 
 .hero__title {
